@@ -43,8 +43,9 @@
 	<script>
 		var link = document.getElementById('link');
 		link.onmouseover = () => link.setAttribute("href", "https://www.google.com"); // when hover
-		link.onmouseout = () => link.setAttribute("href", "https://example.com"); // when not hover and effect to right click
-		link.onclick = () => link.setAttribute("href", "https://example.com"); // left click
+		link.oncontextmenu = () => link.setAttribute("href", "https://www.google.com"); // when right click
+		link.onmouseout = () => link.setAttribute("href", "https://example.com"); // when not hover
+		link.onclick = () => link.setAttribute("href", "https://example.com"); // when left click
 	</script>
 </body>
 
